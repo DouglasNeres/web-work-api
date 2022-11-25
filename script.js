@@ -1,5 +1,5 @@
 async function convert() {
-  let button = document.getElementById("botao");
+  let button = document.getElementById("btn");
   let retry = document.getElementById("retry");
   let request = document.getElementById("converter");
   let converted = document.getElementById("convertido");
@@ -10,12 +10,12 @@ async function convert() {
     const coin1 = document.getElementById("coin1").value;
     const coin2 = document.getElementById("coin2").value;
 
-    const api = `https://economia.awesomeapi.com.br/last/${coin2}-${coin1}`;
+    const api = `https://economia.awesomeapi.com.br/last/${coin1}-${coin2}`;
     const response = await (await fetch(api)).json();
 
     const req = request.value;
 
-    const result = response[`${coin2}${coin1}`].high;
+    const result = response[`${coin1}${coin2}`].high;
 
     let calc = (req * result).toFixed(2);
     
@@ -23,6 +23,7 @@ async function convert() {
   });
 
   retry.addEventListener('click', (e) => {
+    e.preventDefault()
     request.value = ""
     converted.value = ""
   })

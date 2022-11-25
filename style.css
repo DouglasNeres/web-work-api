@@ -6,9 +6,60 @@
 }
 
 body{
-  background:\ url('imgs/moedasBg.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+}
 
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 90px;
+  border-radius: 5px;
+}
+
+select{
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.field{
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+input{
+  width: 290px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+#convertido{
+  background-color: #e1e1e1;
+}
+
+.buttons * {
+  margin-top: 30px;
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+#btn{
+  background-color: #66f566;
+}
+
+#retry{
+  background-color: #e13e3e;
 }

@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <form method="post" id="form">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <form method="post" id="form">
+    <h2>Selecione a moeda que deseja converter:</h2>
+    <div class="field">
       <select name="" id="coin1">
         <option value="BRL">Real</option>
         <option value="USD">Dolar</option>
         <option value="EUR">Euro</option>
       </select>
-      <input type="number" placeholder="" id="converter" name="converter" />
-      <input type="submit" id="botao" value="enviar">
+      <input type="number" placeholder="Digite o valor" id="converter" name="converter" />
+    </div>
+    <div class="field">
       <select name="" id="coin2">
         <option value="BRL">Real</option>
         <option value="USD">Dolar</option>
         <option value="EUR">Euro</option>
       </select>
-      <input type="number" placeholder="" id="convertido" name="convertido" disabled/>
-      <input type="submit" id="retry" value="Tentar Novamente">
-      
-    </form>
-  </body>
+      <input type="number" placeholder="" id="convertido" name="convertido" disabled />
+    </div>
+    <div class="buttons">
+      <button id="btn">Converter</button>
+      <button id="retry">Limpar</button>
+    </div>
+  </form>
+</body>
+
 </html>
