@@ -1,8 +1,8 @@
 async function convert() {
   let button = document.getElementById("btn");
-  let retry = document.getElementById("retry");
-  let request = document.getElementById("converter");
-  let converted = document.getElementById("convertido");
+  let retry = document.getElementById("clean");
+  let request = document.getElementById("value");
+  let converted = document.getElementById("result");
 
   button.addEventListener("click", async (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ async function convert() {
 
     let calc = (req * result).toFixed(2);
     
-    converted.value = calc;
+    converted.value = calc
   });
 
   retry.addEventListener('click', (e) => {

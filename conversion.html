@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Conversion Page</title>
+  <script src="js/script.js" defer></script>
   <link rel="stylesheet" href="css/conversion.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +16,57 @@
 </head>
 
 <body>
-  <div class="content"></div>
+  <header>
+    <nav>
+      <a href="index.html"><img src="assets/coin-convert-logo.svg" alt=""></a>
+      <ul>
+        <li><a href="https://linkr.bio/networks77" target="_blank" rel="noopener noreferrer"><img class="icons "
+              src="assets/linkedin-icon.svg" alt=""></a></li>
+        <li><a href="https://linkr.bio/networks77" target="_blank" rel="noopener noreferrer"><img class="icons "
+              src="assets/github-icon.svg" alt=""></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Conversão</h1>
+    <div class="frame"></div>
+    <form method="post"></form>
+    <div class="conversion">
+      <div class="convert">
+        <p>Converter de:</p>
+        <select name="" id="coin1">
+          <option value="BRL">REAL (BRL)</option>
+          <option value="USD">DÓLAR (USD)</option>
+          <option value="EUR">EURO (EUR)</option>
+        </select>
+      </div>
+      <button class="buttons-roundeds"><img src="assets/reverse-icon.svg" alt=""></button>
+      <div class="for">
+        <p>Para:</p>
+        <select name="" id="coin2">
+          <option value="BRL">REAL (BRL)</option>
+          <option value="USD">DÓLAR (USD)</option>
+          <option value="EUR">EURO (EUR)</option>
+        </select>
+      </div>
+    </div>
 
+    <div class="value-result">
+      <div class="value">
+        <p>Informe o valor:</p>
+        <input type="number" placeholder="  R$ 00,00" id="value" name="value">
+      </div>
+      <button class="buttons-roundeds" type="submit" id="btn" name="btn"><img src="assets/send-icon.svg" alt=""></button>
+      <div class="result">
+        <p>Resultado:</p>
+        <input type="number" id="result" placeholder="  R$ 00,00" disabled>
+      </div>
+    </div>
+
+    <button id="clean">Limpar <img src="assets/clean-icon.svg" alt=""></button>
+    </form>
+    <img src="assets/coins.png" class="coin-bg" alt="">
+  </main>
 </body>
 
 </html>
