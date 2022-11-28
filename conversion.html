@@ -29,8 +29,7 @@
   </header>
   <main>
     <h1>Conversão</h1>
-    <div class="frame"></div>
-    <form method="post"></form>
+    <form method="post">
     <div class="conversion">
       <div class="convert">
         <p>Converter de:</p>
@@ -40,7 +39,7 @@
           <option value="EUR">EURO (EUR)</option>
         </select>
       </div>
-      <button class="buttons-roundeds"><img src="assets/reverse-icon.svg" alt=""></button>
+      <button class="buttons-roundeds" id="invert"><img src="assets/reverse-icon.svg" alt=""></button>
       <div class="for">
         <p>Para:</p>
         <select name="" id="coin2">
@@ -62,9 +61,8 @@
         <input type="number" id="result" placeholder="  R$ 00,00" disabled>
       </div>
     </div>
-
-    <button id="clean">Limpar <img src="assets/clean-icon.svg" alt=""></button>
     </form>
+    <button id="clean">Limpar <img src="assets/clean-icon.svg" alt=""></button>
     <img src="assets/coins.png" class="coin-bg" alt="">
   </main>
 </body>
