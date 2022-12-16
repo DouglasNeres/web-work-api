@@ -11,59 +11,78 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:ital,wght@0,400;0,700;1,300&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <nav>
-      <a href="index.html"><img src="assets/coin-convert-logo.svg" alt=""></a>
-      <ul>
-        <li><a href="https://linkr.bio/networks77" target="_blank" rel="noopener noreferrer"><img class="icons "
-              src="assets/linkedin-icon.svg" alt=""></a></li>
-        <li><a href="https://linkr.bio/networks77" target="_blank" rel="noopener noreferrer"><img class="icons "
-              src="assets/github-icon.svg" alt=""></a></li>
+    <nav class="header__navbar">
+      <a class="header__navbar__logo" href="index.html">
+        <img class="header__navbar__image" src="assets/coin-convert-logo-v2.svg" aria-label="Logo" alt="Logo do Site">
+        <h1 class="header__navbar__title">CoinConvert</h1>
+      </a>
+      <ul class="header__navbar__list">
+        <li class="header__navbar__item">
+          <a class="header__navbar__link" href="https://linkr.bio/networks77" target="_blank" rel="noopener noreferrer">
+            <img class="header__navbar__icon" src="assets/linkedin-icon.svg" alt="Icone do Linkedin">
+          </a>
+        </li>
+        <li class="header__navbar__item">
+          <a class="header__navbar__link" href="https://linkr.bio/networks77" target="_blank" rel="noopener noreferrer">
+            <img class="header__navbar__icon" src="assets/github-icon.svg" alt="Icone do Github">
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
   <main>
-    <h1>Conversão</h1>
-    <form method="post">
-    <div class="conversion">
-      <div class="convert">
-        <p>Converter de:</p>
-        <select name="" id="coin1">
-          <option value="BRL">REAL (BRL)</option>
-          <option value="USD">DÓLAR (USD)</option>
-          <option value="EUR">EURO (EUR)</option>
-        </select>
-      </div>
-      <button class="buttons-roundeds" id="invert"><img src="assets/reverse-icon.svg" alt=""></button>
-      <div class="for">
-        <p>Para:</p>
-        <select name="" id="coin2">
-          <option value="BRL">REAL (BRL)</option>
-          <option value="USD">DÓLAR (USD)</option>
-          <option value="EUR">EURO (EUR)</option>
-        </select>
-      </div>
-    </div>
+    <form class="main__form" method="post">
+      <h1 class="main__title">Conversão</h1>
 
-    <div class="value-result">
-      <div class="value">
-        <p>Informe o valor:</p>
-        <input type="number" placeholder="  R$ 00,00" id="value" name="value">
+      <div class="main__form__row">
+        
+          <p class="main__form__p">Converter de:</p>
+          <select class="main__form__select" name="coin1" id="coin1">
+            <option class="main__form__option" value="BRL">REAL (BRL)</option>
+            <option class="main__form__option" value="USD">DÓLAR (USD)</option>
+            <option class="main__form__option" value="EUR">EURO (EUR)</option>
+          </select>
+
+        <button class="main__form__button" id="invert">
+          <img class="main__form__icon" src="assets/reverse-icon.svg" alt="Icon">
+        </button>
+
+          <p class="main__form__p">Para:</p>
+          <select class="main__form__select" name="coin2" id="coin2">
+            <option class="main__form__option" value="BRL">REAL (BRL)</option>
+            <option class="main__form__option" value="USD">DÓLAR (USD)</option>
+            <option class="main__form__option" value="EUR">EURO (EUR)</option>
+          </select>
+
       </div>
-      <button class="buttons-roundeds" type="submit" id="btn" name="btn"><img src="assets/send-icon.svg" alt=""></button>
-      <div class="result">
-        <p>Resultado:</p>
-        <input type="number" id="result" placeholder="  R$ 00,00" disabled>
+
+      <div class="main__form__row">
+
+       
+          <p class="main__form__p">Informe o valor:</p>
+          <input class="main__form__input" type="number" placeholder="Valor a converter" id="value" name="value">
+
+
+        <button class="main__form__button" type="submit" id="btn" name="btn">
+          <img class="main__form__icon" src="assets/send-icon.svg" alt="Icon">
+        </button>
+
+        
+          <p class="main__form__p">Resultado:</p>
+          <input class="main__form__input" type="number" id="result" placeholder="Valor convertido" disabled>
+        
       </div>
-    </div>
+
+      <button class="main__form__button--limpar" id="clean">Limpar
+        <img class="main__form__image--limpar" src="assets/clean-icon.svg" alt="Icon"></button>
+
     </form>
-    <button id="clean">Limpar <img src="assets/clean-icon.svg" alt=""></button>
-    <img src="assets/coins.png" class="coin-bg" alt="">
   </main>
 </body>
 

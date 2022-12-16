@@ -5,41 +5,48 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:ital,wght@0,400;0,700;1,300&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Landing Page</title>
 </head>
 
 <body>
   <header>
-    <nav>
-      <a href="index.html"><img src="assets/coin-convert-logo.svg" alt=""></a>
-      <ul>
-        <li><a href="https://linkr.bio/networks77" target="_blank" rel="noopener noreferrer"><img class="icons "
-              src="assets/linkedin-icon.svg" alt=""></a></li>
-        <li><a href="https://linkr.bio/networks77" target="_blank" rel="noopener noreferrer"><img class="icons "
-              src="assets/github-icon.svg" alt=""></a></li>
+    <nav class="header__navbar">
+      <a class="header__navbar__logo" href="index.html">
+        <img class="header__navbar__image" src="assets/coin-convert-logo-v2.svg" aria-label="Logo" alt="Logo do Site">
+        <h1 class="header__navbar__title">CoinConvert</h1>
+      </a>
+      <ul class="header__navbar__list">
+        <li class="header__navbar__item">
+          <a class="header__navbar__link" href="https://linkr.bio/networks77" target="_blank" rel="noopener noreferrer">
+            <img class="header__navbar__icon" src="assets/linkedin-icon.svg" alt="Icone do Linkedin">
+          </a>
+        </li>
+        <li class="header__navbar__item">
+          <a class="header__navbar__link" href="https://linkr.bio/networks77" target="_blank" rel="noopener noreferrer">
+            <img class="header__navbar__icon" src="assets/github-icon.svg" alt="Icone do Github">
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <aside>
-      <h1><strong>Converta</strong> seus valores de acordo sua <strong>Necessidade.</strong></h1>
-      <p>Aqui você pode encontrar a conversão necessária para o seu dia a dia</p>
-      <a id="button" href="conversion.html">Converta Aqui</a>
-    </aside>
-    <article>
-      <img src="assets/img-main.png" alt="">
-    </article>
+    <div class="main__text">
+      <h1 class="main__text__title"><strong>Converta</strong> seus valores de acordo com sua <strong>necessidade</strong>.</strong></h1>
+      <p class="main__text__sub">Aqui você pode encontrar a conversão necessária para o seu dia a dia!</p>
+      <a class="main__text__link" href="conversion.html">Converta Aqui</a>
+    </div>
+    <div class="main__image__container">
+      <img class="main__image" src="assets/img-main.png" aria-label="LinkButton" alt="Mao segurando um saco de dinheiro">
+    </div>
   </main>
 
   <footer>
-    <p>CoinConvert &copy; 2022</p>
+    <p class="footer__p">CoinConvert &copy; 2022</p>
   </footer>
 </body>
 
